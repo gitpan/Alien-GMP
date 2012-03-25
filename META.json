@@ -23,17 +23,17 @@
          "requires" : {
             "Archive::Tar" : "0",
             "ExtUtils::CChecker" : "0",
-            "File::Spec" : "0",
+            "File::ShareDir" : "0",
             "IPC::Cmd" : "0",
             "Module::Build" : "0.3601",
             "Net::FTP" : "0",
+            "Test::Requires" : "0",
             "perl" : "5.010_001",
             "version" : "0"
          }
       },
       "runtime" : {
          "requires" : {
-            "File::ShareDir" : "0",
             "perl" : "v5.10.0"
          }
       },
@@ -58,6 +58,6 @@
          "web" : "https://github.com/rsimoes/alien-gmp"
       }
    },
-   "version" : "v0.0.1"
+   "version" : "v0.0.2"
 }
 

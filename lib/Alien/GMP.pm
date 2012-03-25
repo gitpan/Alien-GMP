@@ -4,16 +4,14 @@ use v5.10;
 use strict;
 use warnings FATAL => "all";
 use utf8;
-use File::Spec::Functions qw(catdir);
-use File::ShareDir "dist_dir";
 
-our $VERSION = 'v0.0.1'; # VERSION
+our $VERSION = 'v0.0.2'; # VERSION
 # ABSTRACT: Build and install the GNU Multiple Precision library
 
-sub inc_dir {
+sub inc_dir () {
 	return ## }
 
-sub lib_dir {
+sub lib_dir () {
 	return ## }
 
 1;
@@ -64,4 +62,4 @@ L<GNU Lesser General Public License|http://gnu.org/licenses/lgpl.html> ("LGPL")
 v. 3.0 and may be modified and/or redistributed under the same or any compatible
 license. The GNU Multiple Precision library itself is copyrighted by the
 L<Free Software Foundation|http://www.fsf.org/> and is also distributed under
-terms of the LGPL v 3.0.
+terms of the LGPL v. 3.0.

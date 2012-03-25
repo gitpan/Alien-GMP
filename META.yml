@@ -11,10 +11,11 @@ build_requires:
 configure_requires:
   Archive::Tar: 0
   ExtUtils::CChecker: 0
-  File::Spec: 0
+  File::ShareDir: 0
   IPC::Cmd: 0
   Module::Build: 0.3601
   Net::FTP: 0
+  Test::Requires: 0
   perl: 5.010_001
   version: 0
 dynamic_config: 0
@@ -25,10 +26,9 @@ meta-spec:
   version: 1.4
 name: Alien-GMP
 requires:
-  File::ShareDir: 0
   perl: v5.10.0
 resources:
   bugtracker: https://github.com/rsimoes/alien-gmp/issues
   homepage: https://metacpan.org/release/Alien-GMP
   repository: git://github.com/rsimoes/alien-gmp.git
-version: v0.0.1
+version: v0.0.2

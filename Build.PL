@@ -10,7 +10,6 @@ use File::Path "remove_tree";
 use IPC::Cmd qw(can_run run);
 use Module::Build;
 use Net::FTP;
-use Tie::File;
 
 my $builder = Module::Build->new(
 	# Defaults inserted by DistZilla:
@@ -24,15 +23,15 @@ my $builder = Module::Build->new(
   'configure_requires' => {
     'Archive::Tar' => '0',
     'ExtUtils::CChecker' => '0',
-    'File::Spec' => '0',
+    'File::ShareDir' => '0',
     'IPC::Cmd' => '0',
     'Module::Build' => '0.3601',
     'Net::FTP' => '0',
+    'Test::Requires' => '0',
     'perl' => '5.010_001',
     'version' => '0'
   },
   'requires' => {
-    'File::ShareDir' => '0',
     'perl' => 'v5.10.0'
   },
 	  'dist_abstract' => 'Build and install the GNU Multiple Precision library',
