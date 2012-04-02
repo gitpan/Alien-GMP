@@ -9,7 +9,7 @@ dist.ini
 lib/Alien/GMP.pm
 perlcritic.rc
 t/00-compile.t
-t/01-dirs_exist.t
+t/01-shared_assets_exist.t
 t/author-critic.t
 t/author-pod-spell.t
 t/author-test-eol.t
@@ -22,7 +22,6 @@ t/release-mojibake.t
 t/release-pod-coverage.t
 t/release-pod-linkcheck.t
 t/release-pod-syntax.t
-t/release-portability.t
 t/release-synopsis.t
 t/release-test-version.t
 t/release-unused-vars.t

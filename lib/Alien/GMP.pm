@@ -1,18 +1,15 @@
 package Alien::GMP;
 
-use v5.10;
 use strict;
 use warnings FATAL => "all";
 use utf8;
 
-our $VERSION = 'v0.0.2'; # VERSION
+our $VERSION = 'v0.0.3'; # VERSION
 # ABSTRACT: Build and install the GNU Multiple Precision library
 
-sub inc_dir () {
-	return ## }
+sub inc_dir () { "##" }
 
-sub lib_dir () {
-	return ## }
+sub lib_dir () { "##" }
 
 1;
 =encoding utf8
@@ -43,11 +40,13 @@ the official GMP website, L<http://www.gmplib.org/>.
 
 =item B<Alien::GMP::inc_dir()>
 
-Takes no arguments and returns the C I<includes> directory.
+Takes no arguments and returns the C I<includes> directory that contains
+C<gmp.h>.
 
 =item B<Alien::GMP::lib_dir()>
 
-Takes no arguments and returns the C I<libraries> directory.
+Takes no arguments and returns the C I<libraries> directory that contains
+C<libgmp.so>.
 
 =back
 

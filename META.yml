@@ -8,6 +8,7 @@ build_requires:
   Module::Build: 0.3601
   Test::More: 0
   Test::Requires: 0
+  perl: 5.006
 configure_requires:
   Archive::Tar: 0
   ExtUtils::CChecker: 0
@@ -19,16 +20,16 @@ configure_requires:
   perl: 5.010_001
   version: 0
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300010, CPAN::Meta::Converter version 2.120630'
+generated_by: 'Dist::Zilla version 4.300013, CPAN::Meta::Converter version 2.120900'
 license: lgpl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Alien-GMP
 requires:
-  perl: v5.10.0
+  perl: 5.008
 resources:
   bugtracker: https://github.com/rsimoes/alien-gmp/issues
   homepage: https://metacpan.org/release/Alien-GMP
   repository: git://github.com/rsimoes/alien-gmp.git
-version: v0.0.2
+version: v0.0.3
