@@ -9,6 +9,15 @@ use File::Path "remove_tree";
 use IPC::Cmd qw(can_run run);
 use Module::Build;
 use Net::FTP;
+use Alien::Autotools qw(autoconf_dir automake_dir libtool_dir);
+use File::Path qw(make_path);
+
+# Prevent warnings about missing share directory:
+make_path("share");
+
+# Include autotools bin directories for compilation:
+$ENV{PATH} = autoconf_dir() . ":" . automake_dir() . ":" . libtool_dir()
+			 . ":$ENV{PATH}";
 
 my $builder = Module::Build->new(
 	# Defaults inserted by DistZilla:
@@ -21,20 +30,22 @@ my $builder = Module::Build->new(
     'perl' => '5.006'
   },
   'configure_requires' => {
+    'Alien::Autotools' => '0.000_004',
     'Archive::Tar' => '0',
     'ExtUtils::CChecker' => '0',
+    'File::Path' => '2.08',
     'File::ShareDir' => '0',
     'IPC::Cmd' => '0',
     'Module::Build' => '0.3601',
     'Net::FTP' => '0',
     'Test::Requires' => '0',
-    'perl' => '5.010_001',
+    'perl' => '5.008_008',
     'version' => '0'
   },
   'requires' => {
     'perl' => '5.008'
   },
-	  'dist_abstract' => 'Build and install the GNU Multiple Precision library',
+	  'dist_abstract' => 'Build and install the GNU Multiple Precision library.',
   'dist_name' => 'Alien-GMP',
   'license' => 'lgpl',
 	  'dist_author' => [
