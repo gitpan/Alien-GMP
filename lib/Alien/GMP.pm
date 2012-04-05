@@ -4,7 +4,7 @@ use strict;
 use warnings FATAL => "all";
 use utf8;
 
-our $VERSION = 'v0.0.4'; # VERSION
+our $VERSION = 'v0.0.5'; # VERSION
 # ABSTRACT: Build and install the GNU Multiple Precision library.
 
 sub inc_dir () { "##" }
