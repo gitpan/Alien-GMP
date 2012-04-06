@@ -8,9 +8,8 @@ build_requires:
   Module::Build: 0.3601
   Test::More: 0
   Test::Requires: 0
-  perl: 5.006
 configure_requires:
-  Alien::Autotools: 0.000_005
+  Alien::Autotools: 0.000_006
   Archive::Tar: 0
   ExtUtils::CChecker: 0
   File::Path: 2.08
@@ -18,7 +17,7 @@ configure_requires:
   IPC::Cmd: 0
   Module::Build: 0.3601
   Net::FTP: 0
-  perl: 5.008_008
+  perl: 5.010_001
   version: 0
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 4.300013, CPAN::Meta::Converter version 2.120900'
@@ -28,9 +27,9 @@ meta-spec:
   version: 1.4
 name: Alien-GMP
 requires:
-  perl: 5.008
+  perl: v5.10.0
 resources:
   bugtracker: https://github.com/rsimoes/alien-gmp/issues
   homepage: https://metacpan.org/release/Alien-GMP
   repository: git://github.com/rsimoes/alien-gmp.git
-version: v0.0.5
+version: v0.0.6

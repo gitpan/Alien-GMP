@@ -1,5 +1,8 @@
 Revision history for Alien-GMP
 
+v0.0.6    2012-04-06 04:25:16 America/Chicago
+	- Bumped Perl version requirement to v5.10.1.
+
 v0.0.5    2012-04-05 14:24:01 America/Chicago
 	- Change procedure to find header file and shared object by using
 	  qw(cc -print-search-dirs).
